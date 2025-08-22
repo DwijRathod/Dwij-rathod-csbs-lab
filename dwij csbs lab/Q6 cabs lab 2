@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main(void) {
+    float marks,p,c,m,tol;
+    
+    printf("physics marks : ");    ///average is marks
+    scanf("%f",&p);
+    
+    printf("chemistry marks : ");
+    scanf("%f",&c);
+    
+    printf("mathematics marks : ");
+    scanf("%f",&m);
+    
+    tol=p+c+m;
+    
+    printf("total marks : %f\n",tol);
+    
+    marks=(p+c+m)/3;
+    
+    printf("average of marks : %f\n",marks);
+    
+    if (marks>=70)
+        printf("you average is %f\nyou passed with distinction", marks);
+        
+    else if (marks>=60 && marks<70)
+        printf("you average is %f\nyou passed with first class", marks);
+        
+    else if (marks>=50 && marks<60)
+        printf("you average is %f\nyou passed with second class", marks);
+        
+    else if (marks>=35 && marks<50)
+        printf("you average is %f\nyou passed with third class", marks);
+        
+    else if (marks<35)
+        printf("you average is %f\nyou failled\n", marks);
+    
+    return 0;
+}
+    
+
